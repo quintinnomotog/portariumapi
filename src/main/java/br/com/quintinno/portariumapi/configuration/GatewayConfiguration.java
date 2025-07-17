@@ -12,7 +12,9 @@ public class GatewayConfiguration {
 	@Bean
 	RouteLocator routeLocator(RouteLocatorBuilder routeLocatorBuilder) {
 		return routeLocatorBuilder.routes()
-				.route("defensium-service", route -> route.path("/defensium/**").uri("http://localhost:8080")).build();
+				.route("defensium-service", route -> route.path("/defensium/**").uri("http://localhost:8080"))
+				.route("defensium-service", route -> route.path("/credentium/**").uri("http://localhost:8081"))
+				.build();
 	}
 
 }
