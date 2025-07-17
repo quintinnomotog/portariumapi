@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class GatewayConfiguration {
 
+	// TODO: http://localhost:8765/defensium
 	@Bean
 	RouteLocator routeLocator(RouteLocatorBuilder routeLocatorBuilder) {
 		return routeLocatorBuilder.routes()
