@@ -25,7 +25,7 @@ public class Application implements CommandLineRunner {
 		StringBuilder apiInfo = new StringBuilder()
 				.append("\n\n")
 				.append("Aplicação:  PortariumService \n")
-				.append("Porta:      8761 \n")
+				.append("Porta:      8765 \n")
 				.append("Publicação: " + dataBuild.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + "\n")
 				.append("Ambiente:   Desenvolvimento \n");
 		return apiInfo.toString();

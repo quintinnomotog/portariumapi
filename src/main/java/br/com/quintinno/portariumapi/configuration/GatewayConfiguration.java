@@ -13,9 +13,9 @@ public class GatewayConfiguration {
 	RouteLocator routeLocator(RouteLocatorBuilder routeLocatorBuilder) {
 		return routeLocatorBuilder.routes()
 //				.route("defensium-service", route -> route.path("/defensium/**").uri("http://localhost:8080"))
-				.route("defensium-service", route -> route.path("/defensium", "/defensium/**").uri("lb://defensium-service-desenvolvimento"))
+				.route("defensium-service", route -> route.path("/defensium", "/defensium/**").uri("lb://defensiumapi"))
 //				.route("defensium-service", route -> route.path("/credentium", "/credentium/**").uri("http://localhost:8081"))
-				.route("defensium-service", route -> route.path("/credentium", "/credentium/**").uri("lb://credentium-service-desenvolvimento"))
+				.route("defensium-service", route -> route.path("/credentium", "/credentium/**").uri("lb://credentiumapi"))
 				.build();
 	}
 
